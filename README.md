@@ -1,6 +1,15 @@
-Hello git
+# Learn Git Flow
 
-Add Feature/login
-
-Change logs
-- Add feature/login
+# Feature Branch
+แตก Branch จาก Develop
+```
+git co develop
+git co -b feaure/feature_name
+```
+ทำงาน
+```
+git add .
+git commit -m "Add feature feature_name"
+git push origin feature/feature_name
+```
+เปิด PR
