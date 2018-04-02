@@ -1,7 +1,7 @@
 # Learn Git Flow
 
 ## Feature Branch
-แตก Branch จาก Develop
+แตก branch จาก develop
 ```
 git co develop
 git co -b feaure/feature_name
@@ -12,11 +12,10 @@ git add .
 git commit -m "Add feature feature_name"
 git push origin feature/feature_name
 ```
-เปิด PR
-
+เปิด PR merge เข้า develop
 
 ## Release Branch
-แตก Branch จาก Develop
+แตก branch จาก develop
 ```
 git co develop
 git co -b release/version_number
@@ -27,4 +26,18 @@ git add .
 git commit -m "Release version_number"
 git push orgin release/version_number
 ```
-เปิด PR merge เข้า Develop กับ Master
+เปิด PR merge เข้า develop กับ master
+
+## Hotfix Branch
+แตก branch จาก master
+```
+git co master
+git co -b hotfix/bugfix
+```
+แก้ไข bug
+```
+git add .
+git commit -m "Fix bug"
+git push origin hotfix/bugfix
+```
+เปิด PR merge เข้า develop กับ master
